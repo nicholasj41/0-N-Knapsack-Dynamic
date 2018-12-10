@@ -24,14 +24,6 @@ public class MultipleKnapsack {
 		
 		fillTable();
 	}
-
-	/**
-	 * for i from 0 to Capacity
-	 * 		for j from 0 to Amount of items - 1
-	 * 			if weight of item j <= i
-	 * 				table i = max of table i or (table i - weight) + value
-	 * 
-	 */
 	
 	private void fillTable() {
 		table = new int[maxWeight+1];
